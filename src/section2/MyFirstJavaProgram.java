@@ -9,7 +9,18 @@ public class MyFirstJavaProgram {
 		
 		// START HERE
 	
+		int distance = 100;
 		
+		Robot ryan = new Robot();
+		
+		ryan.setSpeed(100);
+		ryan.penDown();
+		
+		for (int i = 0; i < 4; i++) {
+			ryan.turn(90);
+			ryan.move(distance);
+		}
+	
 		
 	}
 }
