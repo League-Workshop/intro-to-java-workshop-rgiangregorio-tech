@@ -48,24 +48,31 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 		int robotYLocation = ryan.getY();
 		
 		// 6. Print the robotXLocation and robotYLocation variables to the console 
-		System.out.println(robotXLocation);
-		System.out.println(robotYLocation);
+		System.out.println("x: " + robotXLocation +" y: " + robotYLocation );
 		// 7. If robot is at same location as the little girl
 		//if(a == 5 && b == 6)
 		
-		if(robotXLocation==730 && robotYLocation==420) {
+		if((robotXLocation >=730  && robotXLocation <= 750) && robotYLocation >=420 && robotYLocation <=440) {
 			
-		}
-		}
-		//      --make a pop-up tell the robot where to go next
+			
 		
+			
+		
+		
+		//      --make a pop-up tell the robot where to go next
+		JOptionPane.showMessageDialog(null, "Go to the boy over there, and you should find the treasure!");
 		// 8. Give the user subsequent clues at different locations on the image
 		// (pirate robot, swamp, parrots, etc.)
 		
 		// 9.  If the robot is in the final location
 		//     --call the treasureFound() method
+		}
+		if(robotXLocation >= 270 && robotXLocation <= 330 && robotYLocation >= 460 && robotYLocation <= 500) {
+		JOptionPane.showMessageDialog(null, "You found the treasure!");
+		}
+		}
 		
-}
+
 
 	private void go() {
 		KeyboardFocusManager.getCurrentKeyboardFocusManager().addKeyEventDispatcher(this);
